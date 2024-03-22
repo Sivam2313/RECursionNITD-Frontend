@@ -1,8 +1,8 @@
 import "./App.css";
-import Home from "./components/Home";
 import ExperimentalHome from "./components/ExperimentalHome";
 import Login from "./components/Login";
-import Layout from "./components/Layout";
+// import Layout from "./components/Layout";
+import Navbar from "./components/Navbar/Navbar";
 import Team from "./components/Teams/Team";
 import { Route, Routes } from "react-router-dom";
 import { AuthProvider } from "./context/AuthContext";
@@ -22,6 +22,7 @@ import { LoadingProvider } from "./context/LoadingContext";
 import PostExperience from "./components/InterviewExperiences/PostExperience";
 import CreateEvent from "./components/Events/CreateEvent";
 import RequireMember from "./components/RequireMember";
+import ExperimentalHome1 from "./components/Home/ExperimentalHome1";
 
 function App() {
   return (
@@ -29,10 +30,10 @@ function App() {
       <LoadingProvider>
         <AuthProvider>
           <Routes>
-            <Route path="/" element={<Layout />}>
+            <Route path="/" element={<Navbar />}>
               {/* public routes*/}
-              <Route path="home" element={<Home />} />
               <Route path="" element={<ExperimentalHome />} />
+              <Route path="home" element={<ExperimentalHome1 />} />
               <Route path="login" element={<Login />} />
               <Route path="register" element={<Register />} />
               <Route path="team" element={<Team />} />
