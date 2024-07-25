@@ -4,14 +4,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        background: "#000000",
-        surface: "#282828",
-        outline: "#282828",
+        background: "#23272F",
+        surface: "#1B1D1E",
+        outline: "#363B3D",
         heading: "#5E95D2",
         subHeading: "#B3B1AD",
         tertiaryText: "#EF6041",
-        primary: "#3500D3",
-        secondary: "#190061",
+        primary: "#0062CC",
         onSurface: "#d7ECEF",
         secondaryText: "#BDE0FF99",
         onPrimary: "#002f68",
@@ -26,13 +25,9 @@ module.exports = {
       "2xl": "1536px",
     },
     fontFamily: {
-      head: ["Oswald", "sans-serif"],
-      sub: ["Montserrat", "serif"],
-      alt: ["Lato", "sans-serif"],
-
-    },
-    dropShadow: {
-      glow: ["0 0px 7px #C9AC57", "0 0px 5px #282828"],
+      head: ["Roboto", "sans-serif"],
+      sub: ["Merriweather", "serif"],
+      alt: ["Montserrat", "sans-serif"],
     },
   },
   fontFamily: {
